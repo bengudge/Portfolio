@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+header, main {
+    margin-left: 200px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    color: #262a44;
+    //margin-top: -21px;
+    //overflow:auto;
+}
+
+a {
+    color: #262a44;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 25px;
+}

@@ -11,10 +11,14 @@
     </head>
     <body>
         <header>
-            <h1>My Name is Ben Gudgion</h1>
-            <p>I'm a Web Developer</p>
-            <!-- Change href to project section -->
-            <a href="#">Scroll Down<br><i class="fa-solid fa-chevron-down"></i></a>
+            <div class="header-image">
+                <h1>My Name is Ben Gudgion</h1>
+                <p>I'm a Web Developer</p>
+                <!-- Change href to project section -->
+                <div class="scrolldown-wrapper">
+                    <a href="#">Scroll Down<br><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
         </header>
         <nav>
             <div id="initials-logo">
@@ -40,6 +44,22 @@
                 </div>
             </section>
             <section class="contact-form-container">
+                <div class="form-foreword"></div>
+                <form method="POST" id="signup">
+                    <h3>Get In Touch</h3>
+                </form>
+                <div class="name-inputs">
+                    <input type="text" class="form-input" placeholder="First Name*" 
+                    id="first-name" name="first-name">
+                    <input type="text" class="form-input" placeholder="Last Name*" 
+                    id="last-name" name="last-name">
+                </div>
+                <input type="email" class="form-input" placeholder="Email Address*" 
+                    id="email" name="email">
+                <input type="text" class="form-input" placeholder="Subject" 
+                    id="message-subject" name="message-subject">   
+                <textarea  class="form-input" placeholder="Message" 
+                    id="message" name="message"></textarea> 
 
             </section>
             <a id="to-top" href="#"><i class="fa-solid fa-chevron-up"></i><br>Back To Top</a>

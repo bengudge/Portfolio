@@ -1,0 +1,9 @@
+
+//Centre containers
+@mixin centre {
+    //width: 90%;
+    max-width: $max-width;
+    //margin: 20px auto;
+    margin-left: 50%;
+    margin-right: auto;
+}
