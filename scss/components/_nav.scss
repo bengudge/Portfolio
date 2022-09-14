@@ -1,4 +1,42 @@
 
 nav {
     position: fixed;
+    width: 200px;
+    height: 100%;
+    color: $base;
+    border: 3px solid $base;
+    text-align: center;
+    top: 0;
+    a {
+        text-decoration: none;
+
+    }
+    #initials-logo {
+        padding: 30px 0;
+        a {
+            font-size: 5rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        border-top: 3px solid $base;
+        border-bottom: 3px solid $base;
+        font-weight: 700;
+
+        li {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-top: 15px;
+        }
+        li:last-child {
+            border-top: 3px solid $base;
+        }
+        
+    }
+    
+    
 }

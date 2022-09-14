@@ -1,4 +1,16 @@
 
 main {
-    
+    #to-top {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-align: center;
+        p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
 }

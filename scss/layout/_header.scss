@@ -1,36 +1,36 @@
 
 header {
-    //position: absolute;
     .header-image {
-        position: relative;
-        //flex-direction: column;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         h1, p, a, i {
             color: white;
         }
-    
-        h1 {
-            //position: absolute;
-            //margin-top: 50vh;
-            font-size: 4rem;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-top: 40vh;
-        }
 
-        p {
-            font-size: 1.5rem;
-            letter-spacing: .08rem;
-            margin-top: 30px;
+        .header-wrapper {
+            h1 {
+                font-size: 4rem;
+                padding-top: 40vh;
+                // margin-block-start: 0;
+                // margin-block-end: 0;
+            }
+            p {
+                font-size: 1.5rem;
+                letter-spacing: .08rem;
+                margin-top: 30px;
+            }
         }
     
         .scrolldown-wrapper {
-            //position: absolute;
-            margin-top: 30vh;
+            margin-top: auto;
+            margin-bottom: 15px;
             a {
                 text-decoration: none;
                 font-size: 1.2rem;
-       
+                i {
+                    margin-top: 10px;
+                }
             }
         }
     }

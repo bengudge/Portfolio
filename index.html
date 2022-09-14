@@ -10,16 +10,6 @@
 
     </head>
     <body>
-        <header>
-            <div class="header-image">
-                <h1>My Name is Ben Gudgion</h1>
-                <p>I'm a Web Developer</p>
-                <!-- Change href to project section -->
-                <div class="scrolldown-wrapper">
-                    <a href="#">Scroll Down<br><i class="fa-solid fa-chevron-down"></i></a>
-                </div>
-            </div>
-        </header>
         <nav>
             <div id="initials-logo">
                 <a href="#">BG</a>
@@ -27,42 +17,74 @@
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <!-- Link to portfolio section -->
-                <li><a href="#">My Portfolio</a></li>
+                <li><a href="index.html#portfolio">My Portfolio</a></li>
                 <li><a href="examples.html">Coding Examples</a></li>
                 <li><a href="scheme.html">SCS Scheme</a></li>
                 <!-- Link to contact form section -->
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
             </ul>
             <div id="socials"></div>
         </nav>
+        <header>
+            <div class="header-image">
+                <div class="header-wrapper">
+                    <h1>My Name is Ben Gudgion</h1>
+                    <p>I'm a Web Developer</p>
+                </div>
+                <!-- Change href to project section -->
+                <div class="scrolldown-wrapper">
+                    <a href="#">Scroll Down<br><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </header>
         <main>
-            <section class="projects-container">
+            <!-- Projects Section -->
+            <section id="portfolio">
                 <div class="project">
-                    <img src="" alt="Netmatters Page Reflection">
+                    <a href="#">
+                        <img src="img/netmatters.png" alt="Netmatters Page Reflection" width="640" height="480">
+                    </a>
+                    <h4>HTML & CSS Reflection</h4>
+                    <!-- Link to the project -->
+                    <a href="#">View Project<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="project">
+                    <a href="#">
+                        <img src="img/javascript.png" alt="Project 2" width="640" height="480">
+                    </a>
+                    <h4>Project 2</h4>
                     <!-- Link to the project -->
                     <a href="#">View Project<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </section>
-            <section class="contact-form-container">
-                <div class="form-foreword"></div>
-                <form method="POST" id="signup">
+            <!-- Contact Form Section -->
+            <section id="contact">
+                <div class="form-foreword">
                     <h3>Get In Touch</h3>
-                </form>
-                <div class="name-inputs">
-                    <input type="text" class="form-input" placeholder="First Name*" 
-                    id="first-name" name="first-name">
-                    <input type="text" class="form-input" placeholder="Last Name*" 
-                    id="last-name" name="last-name">
+                    <p>Please contact me for any queries you may have by using
+                        the form to the right or you can contact me by phone 
+                        or email!
+                    </p>
+                    <h5>00000 000000<br>
+                        gudgion@hotmail.co.uk
+                    </h5>
                 </div>
-                <input type="email" class="form-input" placeholder="Email Address*" 
-                    id="email" name="email">
-                <input type="text" class="form-input" placeholder="Subject" 
-                    id="message-subject" name="message-subject">   
-                <textarea  class="form-input" placeholder="Message" 
-                    id="message" name="message"></textarea> 
-
+                <form method="POST" id="signup">
+                    <div class="name-inputs">
+                        <input type="text" class="form-input" placeholder="First Name*" 
+                        id="first-name" name="first-name">
+                        <input type="text" class="form-input" placeholder="Last Name*" 
+                        id="last-name" name="last-name">
+                    </div>
+                    <input type="email" class="form-input" placeholder="Email Address*" 
+                        id="email" name="email">
+                    <input type="text" class="form-input" placeholder="Subject" 
+                        id="message-subject" name="message-subject">   
+                    <textarea  class="form-input" placeholder="Message" 
+                        id="message" name="message"></textarea> 
+                </form>
             </section>
-            <a id="to-top" href="#"><i class="fa-solid fa-chevron-up"></i><br>Back To Top</a>
+            <a id="to-top" href="#"><i class="fa-solid fa-chevron-up"></i><p>Back To Top</p></a>
         </main>
     </body>
 </html>
