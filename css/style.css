@@ -330,10 +330,6 @@ a {
   color: #262a44;
 }
 
-img {
-  vertical-align: middle;
-}
-
 h2 {
   margin-bottom: 30px;
 }
@@ -342,32 +338,53 @@ p {
   margin-bottom: 25px;
 }
 
-header .header-image {
+header {
+  padding-top: 42px;
+  padding-bottom: 41px;
+  text-align: center;
+  border-bottom: 3px solid #0f1d2b;
+}
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: normal;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+#main-header {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 40;
+  border: none;
+}
+#main-header .header-image {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-header .header-image h1, header .header-image p, header .header-image a, header .header-image i {
+#main-header .header-image h1, #main-header .header-image p, #main-header .header-image a, #main-header .header-image i {
   color: white;
 }
-header .header-image .header-wrapper h1 {
+#main-header .header-image .header-wrapper h1 {
   font-size: 4rem;
   padding-top: 40vh;
 }
-header .header-image .header-wrapper p {
+#main-header .header-image .header-wrapper p {
   font-size: 1.5rem;
   letter-spacing: 0.08rem;
   margin-top: 30px;
 }
-header .header-image .scrolldown-wrapper {
+#main-header .header-image .scrolldown-wrapper {
   margin-top: auto;
   margin-bottom: 15px;
 }
-header .header-image .scrolldown-wrapper a {
+#main-header .header-image .scrolldown-wrapper a {
   text-decoration: none;
   font-size: 1.2rem;
 }
-header .header-image .scrolldown-wrapper a i {
+#main-header .header-image .scrolldown-wrapper a i {
   margin-top: 10px;
 }
 
@@ -383,6 +400,21 @@ main #to-top {
 main #to-top p {
   margin-top: 10px;
   margin-bottom: 0;
+}
+main article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  margin-top: 50px;
+  padding: 10px 30px;
+  background-color: #bac38c;
+  border-radius: 15px;
+  width: 100%;
+}
+
+#main-page-main {
+  background-color: white;
 }
 
 #portfolio {
@@ -445,14 +477,6 @@ main #to-top p {
   gap: 15px;
   width: 65%;
 }
-#contact form input, #contact form textarea {
-  background-color: #bac38c;
-  color: #4a4f39;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 7px;
-  letter-spacing: 0.06rem;
-}
 #contact form textarea {
   padding-bottom: 150px;
 }
@@ -467,19 +491,42 @@ main #to-top p {
   width: 50%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .about-net {
+  line-height: normal;
+}
+main .about-net p {
+  margin: 0;
+}
+
 .btn {
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   height: auto;
   width: fit-content;
   line-height: 35px;
-  border-radius: 5px;
-  padding: 15px 20px;
+  border: 2px solid #0f1d2b;
+  border-radius: 6px;
+  color: #0f1d2b;
+  padding: 8px 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0f1d2b;
+  color: white;
 }
 
 .fa-arrow-right {
   margin-left: 10px;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .header-image {
@@ -488,12 +535,18 @@ main #to-top p {
   height: 100vh;
 }
 
+header {
+  background-image: url(../img/Green-Tropical-Plant-Wallpaper-Mural-Plain.webp);
+  background-size: cover;
+}
+
 nav {
   position: fixed;
   width: 200px;
   height: 100%;
   color: #0f1d2b;
   border: 3px solid #0f1d2b;
+  border-bottom: none;
   text-align: center;
   top: 0;
 }
@@ -507,6 +560,13 @@ nav #initials-logo a {
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 5px;
+  padding: 21px 36px;
+}
+nav #initials-logo:hover {
+  background-color: #0f1d2b;
+}
+nav #initials-logo:hover a {
+  color: white;
 }
 nav ul {
   list-style: none;
@@ -518,11 +578,45 @@ nav ul {
 }
 nav ul li {
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-top: 15px;
+}
+nav ul li a {
+  padding-bottom: 5px;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid #0f1d2b;
 }
 nav ul li:last-child {
   border-top: 3px solid #0f1d2b;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+nav ul li:last-child a {
+  padding: 15px 46px;
+}
+nav ul li:last-child a:hover {
+  border-bottom: none;
+}
+nav ul li:last-child:hover {
+  background-color: #0f1d2b;
+}
+nav ul li:last-child:hover a {
+  color: white;
+}
+
+input, textarea {
+  background-color: #a4bda7;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 7px;
+  letter-spacing: 0.06rem;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: Poppins, sans-serif;
+  color: #4a4f39;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,8 @@ nav {
     width: 200px;
     height: 100%;
     color: $base;
-    border: 3px solid $base;
+    border: $nav-border;
+    border-bottom: none;
     text-align: center;
     top: 0;
     a {
@@ -17,26 +18,58 @@ nav {
             font-size: 5rem;
             font-weight: 700;
             letter-spacing: 5px;
+            padding: 21px 36px;
         }
     }
+
+    #initials-logo:hover {
+        background-color: $base;
+            a {
+                color: white;
+            }
+    }
+
     ul {
         list-style: none;
         padding-left: 0;
         margin: 0;
-        border-top: 3px solid $base;
-        border-bottom: 3px solid $base;
+        border-top: $nav-border;
+        border-bottom: $nav-border;
         font-weight: 700;
 
         li {
             margin-top: 25px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             padding-top: 15px;
+            a {
+                padding-bottom: 5px;
+                
+            }
+            a:hover {
+                border-bottom: $nav-border;
+            }
+            
         }
+
         li:last-child {
-            border-top: 3px solid $base;
+            border-top: $nav-border;
+            margin-bottom: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            a {
+                padding: 15px 46px;
+            }
+            a:hover {
+                border-bottom: none;
+            }
         }
         
+        li:last-child:hover {
+            background-color: $base;
+            a {
+                color: white;
+            }
+            
+        }
     }
-    
-    
 }

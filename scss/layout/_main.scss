@@ -13,4 +13,18 @@ main {
             margin-bottom: 0;
         }
     }
+
+    article {
+        @include centre;
+        max-width: 700px;
+        margin-top: 50px;
+        padding: 10px 30px;
+        background-color: #bac38c;
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+
+#main-page-main {
+    background-color: white;
 }

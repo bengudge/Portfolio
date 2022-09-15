@@ -1,0 +1,14 @@
+
+input, textarea {
+    
+    background-color: #a4bda7;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    letter-spacing: 0.06rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: Poppins, sans-serif;
+    color: #4a4f39;
+}
