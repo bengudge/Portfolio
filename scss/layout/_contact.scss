@@ -42,4 +42,11 @@
             }
         }
     }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        .form-foreword, form {
+            width: 100%;
+        }
+    }
 }

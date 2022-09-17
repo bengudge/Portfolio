@@ -1,7 +1,4 @@
 
-a {
-
-}
 
 .btn {
     text-decoration: none;
@@ -20,4 +17,29 @@ a {
 .btn:hover {
     background-color: $base;
     color: white;
+}
+
+#burger-background {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        position: fixed;
+        width: 100%;
+        background-color: #2a4e45;
+        display: block;
+        height: 90px;
+        z-index: 1;
+    }
+}
+
+#burger-menu {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        color: white;
+        margin: 20px;
+        font-size: 3rem;
+    }
 }
