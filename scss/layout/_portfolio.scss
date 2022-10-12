@@ -1,8 +1,9 @@
 
 #portfolio {
     @include centre;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 30px;
+    padding-top: 30px;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 100px;
+        padding-top: 115px;
         margin-bottom: 0;
     }
 

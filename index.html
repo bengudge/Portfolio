@@ -5,9 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ben Gudgion - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/typed/typed.js"></script>
+        <script src="https://kit.fontawesome.com/259440ef33.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://kit.fontawesome.com/259440ef33.js" crossorigin="anonymous"></script>
+        
 
     </head>
     <body>
@@ -34,8 +37,12 @@
             <div class="header-image">
                 <div class="header-wrapper">
                     <h1>My Name is Ben Gudgion</h1>
-                    <p>I'm a Web Developer</p>
+                    <div id="typed-subhead">
+                        <p>I'm a Web Developer</p>
+                    </div>
+                    <p><span id="typed"></span></p>  
                 </div>
+                
                 <!-- Change href to project section -->
                 <div class="scrolldown-wrapper">
                     <a href="#portfolio">Scroll Down<br><i class="fa-solid fa-chevron-down"></i></a>
@@ -92,5 +99,12 @@
             </section>
             <a id="to-top" href="#"><i class="fa-solid fa-chevron-up"></i><p>Back To Top</p></a>
         </main>
+    <script>
+            var typed = new Typed('#typed',{
+                stringsElement: '#typed-subhead',
+                typeSpeed: 80,
+                startDelay: 1000
+            });
+    </script>
     </body>
 </html>
