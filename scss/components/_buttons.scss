@@ -34,11 +34,14 @@
 
 #burger-menu {
     display: none;
+    
     @media screen and (max-width: 768px) {
         display: block;
         position: fixed;
         z-index: 3;
         color: white;
+        background-color: transparent;
+        border: 0;
         margin: 20px;
         font-size: 3rem;
     }
