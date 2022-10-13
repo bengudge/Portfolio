@@ -577,6 +577,14 @@ main .about-net p {
   color: white;
 }
 
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: xx-large;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 #burger-background {
   display: none;
 }
@@ -593,6 +601,7 @@ main .about-net p {
 
 #burger-menu {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   #burger-menu {
