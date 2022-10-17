@@ -399,7 +399,7 @@ header h1 {
   margin-top: 10px;
 }
 
-main #to-top {
+main .to-top {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -408,7 +408,7 @@ main #to-top {
   text-decoration: none;
   text-align: center;
 }
-main #to-top p {
+main .to-top p {
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -585,11 +585,11 @@ main .about-net p {
   cursor: pointer;
 }
 
-#burger-background {
+.burger-background {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #burger-background {
+  .burger-background {
     position: fixed;
     width: 100%;
     background-color: #2a4e45;
@@ -599,12 +599,12 @@ main .about-net p {
   }
 }
 
-#burger-menu {
+.burger-menu {
   display: none;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  #burger-menu {
+  .burger-menu {
     display: block;
     position: fixed;
     z-index: 3;
