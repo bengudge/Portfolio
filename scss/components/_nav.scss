@@ -73,7 +73,12 @@ nav {
         }
     }
 
+    
+}
+
+.static-menu {
     @media screen and (max-width: 768px) {
+        //transform: translateZ(0) translateX(0)
         display: none;
     }
 }
