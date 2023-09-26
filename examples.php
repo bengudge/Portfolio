@@ -12,44 +12,11 @@
 
     </head>
     <body>
-        <div class="burger-background"></div>
-        <nav data-pushbar-id="left" data-pushbar-direction="left">
-            <div class="initials-logo">
-                <a href="index.html">BG</a>
-            </div>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#portfolio">My Portfolio</a></li>
-                <li><a href="examples.html">Coding Examples</a></li>
-                <li><a href="scheme.html">SCS Scheme</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
-            </ul>
-            <div class="socials"></div>
-            <button data-pushbar-close class="btn-close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </nav>
-        <button class="burger-menu" data-pushbar-target="left">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav>
-            <div class="initials-logo">
-                <a href="index.html">BG</a>
-            </div>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#portfolio">My Portfolio</a></li>
-                <li><a href="examples.html">Coding Examples</a></li>
-                <li><a href="scheme.html">SCS Scheme</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
-            </ul>
-            <div class="socials"></div>
-        </nav>
+        <?php include("sidebar.php") ?>
         <header>
             <h1>Coding Examples</h1>
         </header>
         <main>
-            <!-- <h1 style="text-align: center;margin-top: 200px">Coming Soon!</h1> -->
             <div class="article-container">
                 <article>
                     <h2>Database Challenge</h2>
@@ -118,6 +85,69 @@ ORDER BY mov_year DESC;
     902 | The Innocents             |     1961 |      100 | English         | 1962-02-19 | SW              
                         </code>
                     </div>
+                </article>
+            </div>
+
+            <div class="article-container">
+                <article>
+                    <h2>PHP Code Example</h2>
+                    <p>This project required me to implement what I had learnt from studying PHP and to incorporate it into the 
+                        NetMatters website I had made from a previous project. Using this language allowed me to use some of the 
+                        tools available to PHP which would allow for secure connections to a database, such as PDO (PHP Data Objects).
+                    </p>
+                    <div class="scroller">
+                        <code style="white-space: pre;">
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Validate name
+    $firstName = filter_input(INPUT_POST, 'first-name', FILTER_SANITIZE_STRING);
+    $error = "";
+    if (!$firstName || trim($firstName) === '') {
+        $error = 'Your First Name';
+        array_push($errors, $error);
+    }
+    $lastName = filter_input(INPUT_POST, 'last-name', FILTER_SANITIZE_STRING);
+    $error = "";
+    if (!$lastName || trim($lastName) === '') {
+        $error = 'Your Last Name';
+        array_push($errors, $error);
+    }
+    
+    // Validate email
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $error = "";
+    if ($email) {
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        if (!$email) {
+            $error = 'A valid email';
+            array_push($errors, $error);
+        }
+    } else {
+        $error = 'Your email';
+        array_push($errors, $error);
+    }
+
+    // Validate subject
+    $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
+
+    // Validate message
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $inputs['message'] = $message;
+    $error = "";
+    if (!$message || trim($message) === '') {
+        $error = 'Message';
+        array_push($errors, $error);
+    }
+
+    if($errors) {
+        formatErrors($errors);
+    }
+}
+                        </code>
+                    </div>
+                    <p>The validation code above is an example of another one of PHP's tools which allows for input data to be filtered/
+                        sanitized. This is done to prevent any illegal characters from being sent through to the database.
+                    </p>
                 </article>
             </div>
 

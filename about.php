@@ -12,39 +12,7 @@
 
     </head>
     <body>
-        <div class="burger-background"></div>
-        <nav data-pushbar-id="left" data-pushbar-direction="left">
-            <div class="initials-logo">
-                <a href="index.html">BG</a>
-            </div>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#portfolio">My Portfolio</a></li>
-                <li><a href="examples.html">Coding Examples</a></li>
-                <li><a href="scheme.html">SCS Scheme</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
-            </ul>
-            <div class="socials"></div>
-            <button data-pushbar-close class="btn-close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </nav>
-        <button class="burger-menu" data-pushbar-target="left">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav>
-            <div class="initials-logo">
-                <a href="index.html">BG</a>
-            </div>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#portfolio">My Portfolio</a></li>
-                <li><a href="examples.html">Coding Examples</a></li>
-                <li><a href="scheme.html">SCS Scheme</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
-            </ul>
-            <div class="socials"></div>
-        </nav>
+        <?php include("sidebar.php") ?>
         <header>
             <h1>About Me</h1>
         </header>
